@@ -520,15 +520,15 @@
 
       //subject
      if (subject.length < 10) {
-        document.getElementById("subjectError").innerText = "subject must be at least 10 characters long.";
+        document.getElementById("subjectError").innerText = "must be at least 10 characters.";
         valid = false;
     } else {
         document.getElementById("subjectError").innerText = "";
     }
 
     // Check if the message is at least 10 characters long
-    if (message.length < 10) {
-        document.getElementById("messageError").innerText = "Message must be at least 10 characters long.";
+    if (message.length < 20) {
+        document.getElementById("messageError").innerText = "must be at least 20 characters.";
         valid = false;
     } else {
         document.getElementById("messageError").innerText = "";
