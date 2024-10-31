@@ -496,6 +496,7 @@
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
     let valid = true;
 
@@ -515,6 +516,14 @@
         valid = false;
     } else {
         document.getElementById("emailError").innerText = "";
+    }
+
+      //subject
+     if (subject.length < 10) {
+        document.getElementById("subjectError").innerText = "subject must be at least 10 characters long.";
+        valid = false;
+    } else {
+        document.getElementById("subjectError").innerText = "";
     }
 
     // Check if the message is at least 10 characters long
